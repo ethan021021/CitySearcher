@@ -6,5 +6,7 @@ target 'CitySearcher' do
   use_frameworks!
 
   # Pods for CitySearcher
+	pod "RxSwift"
+	pod "RxCocoa"
 
 end

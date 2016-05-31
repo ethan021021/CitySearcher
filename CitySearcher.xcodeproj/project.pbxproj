@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4413C51A463745E31D64CF41 /* Pods_CitySearcher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4632CB74B0147E42AB379641 /* Pods_CitySearcher.framework */; };
 		7923B7711CFE4DCF00025D0D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7923B7701CFE4DCF00025D0D /* AppDelegate.swift */; };
 		7923B7731CFE4DCF00025D0D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7923B7721CFE4DCF00025D0D /* ViewController.swift */; };
 		7923B7761CFE4DCF00025D0D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7923B7741CFE4DCF00025D0D /* Main.storyboard */; };
@@ -15,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0E258FB86F4B2ED98633A074 /* Pods-CitySearcher.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CitySearcher.release.xcconfig"; path = "Pods/Target Support Files/Pods-CitySearcher/Pods-CitySearcher.release.xcconfig"; sourceTree = "<group>"; };
+		4632CB74B0147E42AB379641 /* Pods_CitySearcher.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CitySearcher.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7923B76D1CFE4DCF00025D0D /* CitySearcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CitySearcher.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7923B7701CFE4DCF00025D0D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7923B7721CFE4DCF00025D0D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		7923B7771CFE4DCF00025D0D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7923B77A1CFE4DCF00025D0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7923B77C1CFE4DCF00025D0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8450B0503B87A55A76CB2BAC /* Pods-CitySearcher.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CitySearcher.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CitySearcher/Pods-CitySearcher.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4413C51A463745E31D64CF41 /* Pods_CitySearcher.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1824A078C4FA237104086EC3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4632CB74B0147E42AB379641 /* Pods_CitySearcher.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		45E7169C27EB15EA109C3430 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8450B0503B87A55A76CB2BAC /* Pods-CitySearcher.debug.xcconfig */,
+				0E258FB86F4B2ED98633A074 /* Pods-CitySearcher.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		7923B7641CFE4DCF00025D0D = {
 			isa = PBXGroup;
 			children = (
 				7923B76F1CFE4DCF00025D0D /* CitySearcher */,
 				7923B76E1CFE4DCF00025D0D /* Products */,
+				45E7169C27EB15EA109C3430 /* Pods */,
+				1824A078C4FA237104086EC3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7923B77F1CFE4DCF00025D0D /* Build configuration list for PBXNativeTarget "CitySearcher" */;
 			buildPhases = (
+				3EC8E79F07971E8AF7FC6A37 /* 📦 Check Pods Manifest.lock */,
 				7923B7691CFE4DCF00025D0D /* Sources */,
 				7923B76A1CFE4DCF00025D0D /* Frameworks */,
 				7923B76B1CFE4DCF00025D0D /* Resources */,
+				F33F1AA104885E0A6030AB32 /* 📦 Embed Pods Frameworks */,
+				0CF2C442210075BB8D9ED50F /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -129,6 +156,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0CF2C442210075BB8D9ED50F /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CitySearcher/Pods-CitySearcher-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3EC8E79F07971E8AF7FC6A37 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F33F1AA104885E0A6030AB32 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CitySearcher/Pods-CitySearcher-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7923B7691CFE4DCF00025D0D /* Sources */ = {
@@ -249,6 +324,7 @@
 		};
 		7923B7801CFE4DCF00025D0D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8450B0503B87A55A76CB2BAC /* Pods-CitySearcher.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CitySearcher/Info.plist;
@@ -260,6 +336,7 @@
 		};
 		7923B7811CFE4DCF00025D0D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E258FB86F4B2ED98633A074 /* Pods-CitySearcher.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CitySearcher/Info.plist;
@@ -288,6 +365,7 @@
 				7923B7811CFE4DCF00025D0D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
